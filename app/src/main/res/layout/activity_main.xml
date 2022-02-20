@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <import type="android.view.View" />
+
+        <variable
+            name="mainViewModel"
+            type="com.phuong.mymusic.ui.main.MainViewModel" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context=".ui.main.MainActivity">
+            <androidx.coordinatorlayout.widget.CoordinatorLayout
+                android:id="@+id/coordinator"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/bottom_nav"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+<!--                <fragment-->
+<!--                    android:id="@+id/test"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:name="com.phuong.mymusic.ui.mymusic.songs.SongsFragment"-->
+<!--                    tools:layout="@layout/fragment_song_detail" />-->
+                <fragment
+                    android:id="@+id/nav_host_fragment"
+                    android:name="androidx.navigation.fragment.NavHostFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:defaultNavHost="true"
+                    android:layout_marginBottom="?attr/actionBarSize"
+                    app:navGraph="@navigation/nav_graph" />
+
+              <FrameLayout
+                  android:id="@+id/sliding_panel"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:scrollbars="none"
+                  app:layout_behavior="@string/bottom_sheet_behavior"
+                  app:behavior_peekHeight="56dp"
+                  >
+                  <fragment
+                      android:id="@+id/player_song"
+                      app:layout_constraintTop_toBottomOf="@id/player_song_mini"
+                      app:layout_constraintBottom_toBottomOf="parent"
+                      android:layout_height="match_parent"
+                      android:layout_width="match_parent"
+                      android:name="com.phuong.mymusic.ui.detailsong.PlayerFragment"
+                      tools:layout="@layout/fragment_song_detail" />
+
+                  <fragment
+                      android:layout_width="match_parent"
+                      android:layout_height="56dp"
+                      android:name="com.phuong.mymusic.ui.MiniPlayerFragment"
+                      app:layout_constraintTop_toTopOf="@id/player_song"
+                      android:id="@+id/player_song_mini_main"
+                      tools:layout="@layout/fragment_mini_player" />
+              </FrameLayout>
+
+            </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:itemHorizontalTranslationEnabled="false"
+        app:itemTextColor="@color/text_menu_selector"
+        app:labelVisibilityMode="labeled"
+        android:visibility="@{mainViewModel.getLiveMenu() == true ? View.VISIBLE : View.GONE}"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/menu_bottom_nav" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

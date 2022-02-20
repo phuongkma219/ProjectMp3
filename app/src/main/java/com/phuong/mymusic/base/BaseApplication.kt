@@ -1,0 +1,5 @@
+package com.phuong.mymusic.base
+
+import android.app.Application
+
+abstract class BaseApplication() : Application()

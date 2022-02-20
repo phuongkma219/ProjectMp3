@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">MyMusic</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="grant_permission">Grant Permission</string>
+    <string name="permission_message_android_11">"Allow access to your files so %s can help you quickly manage your files and more"</string>
+    <string name="allow_permission">Allow</string>
+    <string name="cancel_permission">Cancel</string>
+    <string name="description_read_external_storage">We need the Storage Permission to access your file. Please click Go Settings bellow and active Storage under Storage permission</string>
+    <string name="go_setting">Go Settings</string>
+    <string name="play_my_music">Play my music</string>
+    <string name="search">Search</string>
+    <string name="setting">Setting</string>
+    <string name="library">Library</string>
+    <string name="songs">Songs</string>
+    <string name="my_music">My Music</string>
+    <string name="home">Home</string>
+    <string name="download">Download</string>
+    <string name="favorite">Favorite</string>
+    <string name="deleted_x_songs">Deleted %1$d songs.</string>
+    <string name="action_delete_from_device">Delete from device</string>
+    <string name="action_details">Details</string>
+    <string name="shuffle">Shuffle</string>
+    <string name="action_play_all">Play all</string>
+    <string name="label_bit_rate">Bitrate</string>
+    <string name="label_file_format">Format</string>
+    <string name="label_file_name">File name</string>
+    <string name="label_file_path">File path</string>
+    <string name="label_file_size">Size</string>
+    <string name="label_sampling_rate">Sampling rate</string>
+    <string name="label_track_length">Length</string>
+    <string name="ok">Ok</string>
+    <string name="for_you">For you</string>
+    <string name="share">Share</string>
+</resources>

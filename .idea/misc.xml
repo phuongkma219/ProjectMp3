@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/MyMusic/app/src/main/res/drawable-xxxhdpi/ic_close.xml" value="0.26205128205128203" />
+        <entry key="..\:/MyMusic/app/src/main/res/drawable-xxxhdpi/notification_selector.xml" value="0.26205128205128203" />
+        <entry key="..\:/MyMusic/app/src/main/res/drawable/home_selector.xml" value="0.2518518518518518" />
+        <entry key="..\:/MyMusic/app/src/main/res/drawable/ic_baseline_keyboard_arrow_down_24.xml" value="0.2703125" />
+        <entry key="..\:/MyMusic/app/src/main/res/drawable/ic_baseline_music_video_24.xml" value="0.2518518518518518" />
+        <entry key="..\:/MyMusic/app/src/main/res/drawable/ic_baseline_music_video_back_24.xml" value="0.2518518518518518" />
+        <entry key="..\:/MyMusic/app/src/main/res/drawable/ic_baseline_pause_circle_filled_24_back.xml" value="0.2703125" />
+        <entry key="..\:/MyMusic/app/src/main/res/drawable/ic_baseline_search_24.xml" value="0.2703125" />
+        <entry key="..\:/MyMusic/app/src/main/res/drawable/ic_collapse_player.xml" value="0.2703125" />
+        <entry key="..\:/MyMusic/app/src/main/res/drawable/ic_launcher_background.xml" value="0.13541666666666666" />
+        <entry key="..\:/MyMusic/app/src/main/res/drawable/my_music_selector.xml" value="0.2518518518518518" />
+        <entry key="..\:/MyMusic/app/src/main/res/drawable/rounded_corners_background.xml" value="0.2657407407407407" />
+        <entry key="..\:/MyMusic/app/src/main/res/drawable/shape_bg_indicator.xml" value="0.26614583333333336" />
+        <entry key="..\:/MyMusic/app/src/main/res/drawable/shape_dialog_file_details.xml" value="0.26614583333333336" />
+        <entry key="..\:/MyMusic/app/src/main/res/drawable/shape_image_radius.xml" value="0.14375" />
+        <entry key="..\:/MyMusic/app/src/main/res/drawable/splash.xml" value="0.2490740740740741" />
+        <entry key="..\:/MyMusic/app/src/main/res/layout/activity_demo.xml" value="0.25416666666666665" />
+        <entry key="..\:/MyMusic/app/src/main/res/layout/activity_demo2.xml" value="0.25" />
+        <entry key="..\:/MyMusic/app/src/main/res/layout/activity_main.xml" value="0.20802919708029197" />
+        <entry key="..\:/MyMusic/app/src/main/res/layout/bottom_sheet_layout.xml" value="0.25416666666666665" />
+        <entry key="..\:/MyMusic/app/src/main/res/layout/demo.xml" value="0.25416666666666665" />
+        <entry key="..\:/MyMusic/app/src/main/res/layout/dialog_file_details.xml" value="0.25416666666666665" />
+        <entry key="..\:/MyMusic/app/src/main/res/layout/fragment_home.xml" value="0.25416666666666665" />
+        <entry key="..\:/MyMusic/app/src/main/res/layout/fragment_lyric.xml" value="0.25" />
+        <entry key="..\:/MyMusic/app/src/main/res/layout/fragment_mini_player.xml" value="0.25416666666666665" />
+        <entry key="..\:/MyMusic/app/src/main/res/layout/fragment_my_music.xml" value="0.13027618551328818" />
+        <entry key="..\:/MyMusic/app/src/main/res/layout/fragment_player.xml" value="0.1" />
+        <entry key="..\:/MyMusic/app/src/main/res/layout/fragment_song_detail.xml" value="0.264" />
+        <entry key="..\:/MyMusic/app/src/main/res/layout/fragment_songs.xml" value="0.25416666666666665" />
+        <entry key="..\:/MyMusic/app/src/main/res/layout/item_menu_music.xml" value="0.20925925925925926" />
+        <entry key="..\:/MyMusic/app/src/main/res/layout/item_song_local.xml" value="0.25025641025641027" />
+        <entry key="..\:/MyMusic/app/src/main/res/layout/layout_demo.xml" value="0.25" />
+        <entry key="..\:/MyMusic/app/src/main/res/layout/layout_notification.xml" value="0.25" />
+        <entry key="..\:/MyMusic/app/src/main/res/layout/layout_notification_.xml" value="0.25" />
+        <entry key="..\:/MyMusic/app/src/main/res/layout/layout_notification_collapsed.xml" value="0.264" />
+        <entry key="..\:/MyMusic/app/src/main/res/layout/layout_notification_expanded.xml" value="0.21944444444444444" />
+        <entry key="..\:/MyMusic/app/src/main/res/layout/sliding_music_panel_layout.xml" value="0.25416666666666665" />
+        <entry key="..\:/MyMusic/app/src/main/res/layout/song_mini_layout.xml" value="0.25416666666666665" />
+        <entry key="..\:/MyMusic/app/src/main/res/menu/menu_bottom_nav.xml" value="0.21296296296296297" />
+        <entry key="..\:/MyMusic/app/src/main/res/menu/menu_item_song.xml" value="0.20925925925925926" />
+        <entry key="..\:/MyMusic/app/src/main/res/xml/demo_scene.xml" value="0.25416666666666665" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectPlainTextFileTypeManager">
+    <file url="file://$PROJECT_DIR$/app/proguard-rules.pro" />
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

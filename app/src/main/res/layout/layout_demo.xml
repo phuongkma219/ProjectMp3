@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="item"
+            type="com.phuong.mymusic.model.Song" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_bg_image_song"
+            loadImageBackgroud="@{item.albumId}"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_248sdp"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_song_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="@dimen/_12sdp"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:scrollHorizontally="true"
+            android:text="@{item.title}"
+            android:textAlignment="center"
+            android:textColor="@color/song_name"
+            android:textSize="@dimen/_16sdp"
+            app:layout_constraintEnd_toEndOf="@id/cv_image_song"
+            app:layout_constraintStart_toStartOf="@id/cv_image_song"
+            app:layout_constraintTop_toBottomOf="@id/cv_image_song"
+            tools:text="@tools:sample/cities" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_artis_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@{item.artistName}"
+            android:textAlignment="center"
+            android:textColor="@color/artis_name"
+            android:textSize="@dimen/_14sdp"
+            app:layout_constraintEnd_toEndOf="@id/tv_song_name"
+            app:layout_constraintStart_toStartOf="@id/tv_song_name"
+            app:layout_constraintTop_toBottomOf="@id/tv_song_name"
+            tools:text="@tools:sample/lorem" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/cv_image_song"
+            loadImage="@{item.albumId}"
+            android:layout_width="@dimen/_220sdp"
+            android:layout_height="@dimen/_220sdp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/aodai"
+            android:background="@drawable/shape_image_radius"
+            app:layout_constraintDimensionRatio="1:1"
+            android:layout_marginTop="@dimen/_56sdp"
+            app:layout_constraintBottom_toBottomOf="@id/iv_bg_image_song"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/myMusicFragment">
+
+    <fragment
+        android:id="@+id/myMusicFragment"
+        android:name="com.phuong.mymusic.ui.mymusic.MyMusicFragment"
+        android:label="MyMusicFragment">
+        <action
+            android:id="@+id/action_myMusicFragment_to_songsFragment"
+            app:destination="@id/songsFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/songsFragment"
+        android:name="com.phuong.mymusic.ui.mymusic.songs.SongsFragment"
+        android:label="SongsFragment">
+        <argument
+            android:name="item"
+            app:argType="com.phuong.mymusic.model.Song"/>
+        <action
+            android:id="@+id/action_songsFragment_to_miniPlayerFragment"
+            app:destination="@id/miniPlayerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.phuong.mymusic.ui.home.HomeFragment"
+        android:label="HomeFragment">
+        <action
+            android:id="@+id/action_homeFragment_to_myMusicFragment"
+            app:destination="@id/myMusicFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_songDetailFragment"
+            app:destination="@id/playerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/playerFragment"
+        android:name="com.phuong.mymusic.ui.detailsong.PlayerFragment"
+        android:label="SongDetailFragment" >
+        <argument
+            android:name="item"
+            app:argType="com.phuong.mymusic.model.Song" />
+    </fragment>
+    <fragment
+        android:id="@+id/miniPlayerFragment"
+        android:name="com.phuong.mymusic.ui.MiniPlayerFragment"
+        android:label="MiniPlayerFragment" >
+        <argument
+            android:name="item"
+            app:argType="com.phuong.mymusic.model.Song"/>
+    </fragment>
+
+
+</navigation>

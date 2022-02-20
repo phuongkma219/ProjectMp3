@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="brand">#257DF3</color>
+    <color name="brand_500">#0C64D9</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="song_name">#000000</color>
+    <color name="artis_name">#993C3C43</color>
+    <color name="sys_bg">#2daaed</color>
+    <color name="color_title">#393838</color>
+    <color name="divider">#E0E0E0</color>
+    <color name="shuffle">#7c4dff</color>
+    <color name="playerBackground">#fefbe3</color>
+    <color name="mainBackground">#112e40</color>
+    <color name="textDefault">#4e4c62</color>
+    <color name="textOrange">#ff7775</color>
+    <color name="buttonBackground">#4e4c62</color>
+    <color name="nav_background">#0097A7</color>
+    <color name="nav_selected">#0083ff</color>
+    <color name="bg_notification">#64C7F3</color>
+</resources>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context=".ui.mymusic.MyMusicFragment">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            app:title="@string/my_music"
+            app:titleTextColor="@color/white"
+            android:background="@color/sys_bg"
+            app:menu="@menu/menu_toolbar"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/playAction"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:layout_marginEnd="@dimen/_4sdp"
+                android:paddingTop="@dimen/_12sdp"
+                android:paddingBottom="@dimen/_12sdp"
+                android:text="@string/action_play_all"
+                android:textColor="?android:attr/textColorPrimary"
+                app:backgroundTint="?attr/colorSurface"
+                app:cornerRadius="8dp"
+                app:layout_constraintEnd_toStartOf="@+id/shuffleAction"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/toolbar" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/shuffleAction"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_4sdp"
+                android:layout_marginEnd="@dimen/_16sdp"
+                android:paddingTop="@dimen/_12sdp"
+                android:paddingBottom="@dimen/_12sdp"
+                android:text="@string/shuffle"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="@+id/playAction"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/playAction"
+                app:layout_constraintTop_toTopOf="@+id/playAction" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_library"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:layout_marginStart="@dimen/_12sdp"
+            app:layout_constraintTop_toBottomOf="@id/playAction"
+            android:text="@string/library"
+            android:textSize="@dimen/_18sdp"
+            android:textColor="@color/color_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rc_menu_music"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@id/tv_library"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="@dimen/_12sdp"
+            tools:listitem="@layout/item_song_local"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
